@@ -1,16 +1,16 @@
 # Loadout Wardrobe
 
-Loadout Wardrobe is a full-stack wardrobe and outfit-building platform designed to help users import clothing items, organize a digital closet, create styled outfits, and share looks through social features.
+Loadout Wardrobe is a full-stack wardrobe and outfit-building platform designed to help users import clothing items, organize a digital closet, build styled outfits, and share looks through social features.
 
 This repository is a public case study for portfolio and hiring review. The production source code is private.
 
 ## Overview
 
-Loadout Wardrobe started as an independent product build focused on solving a real workflow: turning clothing items into a reusable digital closet, giving users a visual outfit-building space, and adding social features around saved looks.
+Loadout Wardrobe started as an independent product build focused on turning clothing items into a reusable digital closet and giving users a visual space to create outfits.
 
-The project combines closet management, image workflows, canvas-based outfit editing, user profiles, saved outfits, comments, likes, follows, notifications, search, and desktop release packaging.
+The project combines account-based user flows, product importing, image cleanup, background removal, canvas-based outfit arrangement, saved outfits, an Explore page, post interactions, and notifications.
 
-The goal was to build more than a static demo. Loadout Wardrobe was developed as a working product with account-based flows, persistent data, user-generated content, and release-ready desktop packaging.
+The goal was to build a working product experience, not just a static demo. Loadout Wardrobe includes interactive UI behavior, persistent user-generated content, social engagement features, and desktop app packaging.
 
 ## Technical Overview
 
@@ -19,11 +19,12 @@ Loadout Wardrobe was built as a full-stack web and desktop application with:
 * Front-end application development
 * Database-backed user workflows
 * Authentication and user profiles
-* Image upload and asset management
-* Canvas-based editing tools
+* Image upload and product import workflows
+* Background removal processing
+* Canvas-based outfit arrangement
 * Saved outfit workflows
+* Explore page posting
 * Social interaction features
-* Search and discovery features
 * Notification logic
 * Desktop application packaging
 * Iterative QA, debugging, and release preparation
@@ -32,107 +33,127 @@ Specific production implementation details and source code are private.
 
 ## Core Features
 
-* User authentication and account-based workflows
-* Digital closet for saved clothing items
-* Clothing item import and manual upload flows
-* Image cleanup and background removal workflow
-* Visual outfit builder with canvas-based editing
-* Outfit saving, loading, deleting, and publishing
-* User profile pages
-* Follow and unfollow functionality
-* Likes, comments, replies, and tagged mentions
-* Notification system for social activity
-* Search functionality for users and shared content
-* Explore feed for posted outfits
-* Privacy controls for user pages
+* Sign up and login flow
+* Animated splash screen with falling clothing physics
+* Digital wardrobe for imported clothing items
+* Product import flow using item links
+* Manual image upload support
+* Background removal workflow with loading feedback
+* Transparent item images after background removal
+* Fit board for arranging clothing items into outfits
+* Saved outfits and outfit posting
+* Explore page for shared outfits
+* User interaction features for posted looks
+* Notifications when users interact with posts
 * Desktop application packaging and private pre-release deployment
 
 ## Screenshots
 
-### Closet Management
+### Splash Screen
 
-![Closet Management](screenshots/closet.png)
+The splash screen includes an animated falling-clothes background with physics behavior, along with sign up and login entry points.
 
-### Outfit Builder
+![Splash Screen](screenshots/splash-screen.png)
 
-![Outfit Builder](screenshots/outfit-builder.png)
+### Import Flow
 
-### Saved Outfits
+The import screen allows users to paste an item link and import the clothing item into their wardrobe.
 
-![Saved Outfits](screenshots/saved-outfits.png)
+![Import Image Flow](screenshots/import-image.png)
 
-### Explore Feed
+### Background Removal Progress
 
-![Explore Feed](screenshots/explore-feed.png)
+The background removal workflow shows a loading/progress state while the image is being processed.
 
-### Profile Page
+![Background Removal Progress](screenshots/background-removal1.png)
 
-![Profile Page](screenshots/profile-page.png)
+### Background Removed
 
-### Comments and Notifications
+After processing, the clothing item is shown without its background so it can be used cleanly on the outfit board.
 
-![Comments and Notifications](screenshots/comments-notifications.png)
+![Background Removed](screenshots/background-removal2.png)
 
-## What I Built
+### Outfit Board
 
-* Designed and developed the front-end interface for closet management, outfit creation, profile pages, and social interactions
-* Built database-backed workflows for users, outfits, comments, likes, follows, notifications, and saved content
-* Implemented authentication-based user flows and protected user-generated content
-* Created canvas-based editing tools for positioning, scaling, rotating, and arranging clothing items
-* Developed import workflows for adding clothing items from URLs and manual uploads
-* Added social features including comments, replies, likes, follows, tagged mentions, and notifications
-* Built search and discovery features for users and shared outfits
-* Packaged the application as a desktop pre-release
-* Managed debugging, UI fixes, release notes, and iterative product improvements
+The outfit board allows users to arrange clothing items visually into a complete fit.
 
-## Problems Solved
+![Outfit Board](screenshots/outfit-board.png)
 
-* Converted a manual styling process into a structured digital workflow
-* Created reusable closet items so users could build multiple outfits from saved pieces
-* Added visual editing tools to make outfit creation more interactive
-* Built social features to make outfits shareable, discoverable, and interactive
-* Implemented notification logic for follows, likes, comments, and tagged mentions
-* Improved usability through repeated debugging of search, image rendering, comments, layout issues, and interaction bugs
-* Created a packaged desktop release to make the project feel closer to a real product than a simple web demo
+### Explore Page
 
-## Product Highlights
+The Explore page shows outfits that users have posted publicly for discovery and interaction.
 
-### Closet Management
-
-Users can save clothing items into a digital closet and reuse them when creating outfits. This creates a more organized workflow than manually collecting screenshots or images.
-
-### Outfit Builder
-
-The outfit builder allows users to place, move, rotate, scale, and arrange clothing items visually. This required interactive canvas behavior rather than simple form-based UI.
-
-### Social Features
-
-Loadout Wardrobe includes social product features such as profiles, follows, likes, comments, replies, mentions, notifications, and shared outfit discovery.
+![Explore Page](screenshots/explore-page.png)
 
 ### Notifications
 
-The notification system supports different event types, including follows, likes, comments, and tagged mentions. This required separating general comment activity from direct mention activity.
+The notification screen shows activity from other users interacting with posted outfits on the Explore page.
 
-### Desktop Packaging
+![Notifications](screenshots/notifications.png)
 
-The application was packaged as a private desktop pre-release, including release preparation, bug fixing, and GitHub release management.
+## What I Built
+
+* Designed and developed the front-end interface for authentication, importing, wardrobe management, outfit creation, Explore posts, and notifications
+* Built account-based workflows for user content and saved wardrobe items
+* Developed product import flows that allow users to add clothing items through item links
+* Created a background removal workflow with loading feedback and transparent output images
+* Built an interactive outfit board for visually arranging clothing into complete looks
+* Implemented Explore posting so users can share completed outfits
+* Added notification behavior for user interactions on posted outfits
+* Managed debugging, UI fixes, release packaging, and product iteration
+
+## Problems Solved
+
+* Turned a manual styling process into a structured digital wardrobe workflow
+* Made clothing items reusable by saving them into a digital wardrobe
+* Improved outfit creation with a visual board instead of static image storage
+* Added background removal to make imported items cleaner and easier to style
+* Created social discovery through Explore page posting
+* Added notifications so users can see when others interact with their posts
+* Improved the product through repeated debugging of imports, image handling, UI layout, search, comments, notifications, and desktop packaging
+
+## Product Highlights
+
+### Animated Entry Experience
+
+The splash screen was designed to make the app feel more polished than a basic login page. The falling clothing animation adds motion and brand personality before users enter the product.
+
+### Import to Wardrobe
+
+Users can import clothing items using links, making it faster to build a digital wardrobe without manually saving every product image first.
+
+### Background Removal
+
+The background removal flow improves outfit creation by turning product images into cleaner transparent assets that can be placed on the fit board.
+
+### Fit Board
+
+The fit board is the main styling workspace. Users can arrange clothing items visually to create a complete outfit before saving or posting it.
+
+### Explore Page
+
+The Explore page turns outfits into shareable posts, making the app more than a private wardrobe tool.
+
+### Notifications
+
+Notifications create feedback when users interact with posted outfits, helping the product feel alive and social.
 
 ## Development Focus
 
 This project helped strengthen experience in:
 
-* Full-stack application structure
-* UI development
-* Product thinking
-* Database-backed workflows
-* User-generated content
-* Authentication flows
-* Interactive canvas tools
-* Social feature logic
-* Search and discovery workflows
+* Full-stack product development
+* UI and interaction design
+* Authentication-based workflows
+* Database-backed user content
+* Image import and processing workflows
+* Background removal integration
+* Interactive outfit-building interfaces
+* Social product features
+* Notification systems
 * Debugging and QA testing
 * Desktop app packaging
-* Release management
+* Release preparation
 
 ## Release Status
 
@@ -145,8 +166,12 @@ Private production project. Public case study available for portfolio and hiring
 Current status:
 
 * Core product features built
+* Product import workflow implemented
+* Background removal workflow implemented
+* Outfit board implemented
+* Explore posting implemented
+* Notifications implemented
 * Desktop pre-release packaged
-* Social features implemented
 * Ongoing polish, QA, and feature refinement
 
 ## Future Improvements
@@ -155,11 +180,11 @@ Planned or potential improvements include:
 
 * Cleaner onboarding flow
 * Improved mobile responsiveness
-* Better search performance
+* Better import reliability across retail sites
 * More advanced outfit export options
-* Improved image processing controls
+* Improved image editing controls
 * Analytics for outfit views and engagement
-* Better admin and moderation tools
+* Better moderation tools
 * Public demo version with sample data
 
 ## Note
