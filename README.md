@@ -161,7 +161,7 @@ The application has been packaged as a private desktop pre-release. Public downl
 
 ## Status
 
-Private production project. Public case study available for portfolio and hiring review.
+Private production project. Public case study available for review on request
 
 Current status:
 
