@@ -51,7 +51,7 @@ Specific production implementation details and source code are private.
 
 ### Splash Screen
 
-The splash screen includes an animated falling-clothes background with physics behavior, along with sign up and login entry points.
+The splash screen displays animated clothing items pulled from the previously signed-in user’s closet, creating a personalized entry experience before login.
 
 ![Splash Screen](screenshots/splash-screen.png)
 
