@@ -75,7 +75,7 @@ After processing, the clothing item is shown without its background so it can be
 
 ### Outfit Board
 
-The outfit board allows users to arrange clothing items visually into a complete fit.
+The outfit board is the main styling workspace where users can arrange clothing items into a complete fit. Items can be moved, scaled, rotated, layered, and adjusted with editing controls. The board also includes advanced options such as warp and puppet-style adjustments, allowing clothing pieces to be reshaped and better aligned instead of staying as flat static images.
 
 ![Outfit Board](screenshots/outfit-board.png)
 
